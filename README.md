@@ -22,6 +22,3 @@ Each case study follows a structured troubleshooting framework aligned with indu
 2. [Intermittent Wireless Adapter Failure – Windows](cases/wifi-adapter-failure.md)
 
 ---
-
-## Roadmap / Planned Case Studies
-- Active Directory + DNS + GPO Network Hardening
