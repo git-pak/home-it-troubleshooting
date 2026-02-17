@@ -25,7 +25,7 @@ Each case study follows a structured troubleshooting framework aligned with indu
 ---
 
 ## Case Studies 
-- [Case Study Template](templates/troubleshooting.md)
----
-- [Wi-Fi Disconnections on IoT Devices](cases/wifi-disconnections.md)
-- [Intermittent Wireless Adapter Failure – Windows](cases/wifi-adapter-failure.md)
+[Template for Home IT Troubleshooting Case Studies](templates/troubleshooting.md)
+
+1. [Wi-Fi Disconnections on IoT Devices](cases/wifi-disconnections.md)
+2. [Intermittent Wireless Adapter Failure – Windows](cases/wifi-adapter-failure.md)
