@@ -1,5 +1,5 @@
 # Home IT Troubleshooting Case Studies
-
+- [Re-Usable Template](templates/troubleshooting.md)
 This repository documents real-world IT troubleshooting scenarios performed in a home lab environment.  
 The goal is to demonstrate structured problem-solving, diagnostic methodology, and clear technical communication aligned with entry-level IT support roles.
 
@@ -26,6 +26,5 @@ Each case study follows a structured troubleshooting framework aligned with indu
 ---
 
 ## Case Studies
-- [Re-Usable Template](templates/troubleshooting.md)
 - [Wi-Fi Disconnections on IoT Devices](cases/wifi-disconnections.md)
 - [Intermittent Wireless Adapter Failure – Windows](cases/wifi-adapter-failure.md)
