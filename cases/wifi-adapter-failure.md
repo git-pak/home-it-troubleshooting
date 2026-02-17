@@ -14,95 +14,39 @@ Ethernet connectivity consistently restored internet access, indicating the issu
 - DHCP-based home network
 - Dual-band router (2.4 GHz / 5 GHz)
 
-## Observed Behavior
+## Initial Observations
 - Wi-Fi icon disappeared during failure events
 - Wireless adapter intermittently missing in Device Manager
 - Other devices on the network remained stable
 - Issue progressed from intermittent drops to complete failure
+- Ethernet connection remained stable
 
----
+## Hypotheses
+- Wireless adapter disabled or misconfigured
+- Corrupted or unstable driver
+- Windows service dependency failure (WLAN AutoConfig)
+- Progressive hardware degradation of the wireless card
 
-## Troubleshooting Process
+## Troubleshooting Steps
 
-### Step 1 — Confirm OS-Level Adapter Detection
-
-Checked whether Windows recognized the wireless adapter:
-
-- **Device Manager → Network adapters**
-- `ipconfig /all`
-
-During failure events, no wireless adapter appeared.
-
-Conclusion:  
-If the adapter is not detected at OS level, the issue is not DHCP or TCP/IP related.
-
----
-
-### Step 2 — Verify Adapter Not Disabled
-
-Checked for administrative disablement:
-
-- Settings → Network & Internet → Advanced network settings
-- Device Manager → Ensure adapter is enabled
-
-No manual disablement detected.
-
----
-
-### Step 3 — Validate Driver Integrity
-
-Inspected Device Manager for:
-
-- Warning icons (⚠️)
-- “Unknown device” entries
-- Driver errors
-
-Actions taken:
-- Reinstalled wireless driver
-- Updated to latest manufacturer driver
-
-Issue persisted.
-
----
-
-### Step 4 — Verify Required Service
-
-Checked Windows service dependency:
-
-- `services.msc`
-- WLAN AutoConfig → Confirmed Running and Startup Type = Automatic
-
-Service was functioning properly.
-
----
-
-### Isolation Testing
-
-- Connected via Ethernet → Internet restored immediately.
-- Confirmed router and ISP stability using other devices.
-- Observed consistent disappearance of adapter during Wi-Fi failure events.
-
----
+1. Identified that the issue was isolated to the affected device by confirming other network devices remained stable and Ethernet restored connectivity.
+2. Established probable causes including driver instability, service failure, or hardware degradation.
+3. Tested hypotheses through controlled isolation:
+   - Checked OS-level adapter detection via Device Manager and `ipconfig /all`.
+   - Verified adapter was not administratively disabled.
+   - Reinstalled and updated wireless drivers from manufacturer.
+   - Confirmed WLAN AutoConfig service was running and set to Automatic.
+4. Implemented corrective actions at the software level and monitored behavior.
+5. Verified continued failure patterns, including consistent disappearance of the Wi-Fi icon and adapter from OS detection.
 
 ## Resolution
+After software-level remediation failed and the adapter repeatedly disappeared from Windows detection, the internal M.2 wireless network card was physically replaced.
 
-After software-level troubleshooting failed and the adapter repeatedly disappeared from OS detection, the internal M.2 wireless network card was physically replaced.
-
-New adapter installed and drivers configured.
-
+New hardware was installed and drivers configured.  
 Wi-Fi connectivity remained stable following replacement.
 
----
-
-## Root Cause
-
-Progressive hardware failure of the internal wireless adapter caused repeated OS-level detection loss, ultimately resulting in complete wireless failure.
-
----
-
 ## Lessons Learned
-
-- If the adapter is not visible in Device Manager or `ipconfig`, the issue is below the TCP/IP layer.
-- OS-level detection failure narrows troubleshooting away from DHCP/network configuration.
+- If the adapter does not appear in Device Manager or `ipconfig`, the issue is likely below the TCP/IP layer.
+- Ethernet testing is critical for isolating endpoint vs infrastructure issues.
+- Persistent OS-level detection failure often indicates hardware degradation.
 - Structured escalation prevents unnecessary network-side troubleshooting.
-- Consistent symptom patterns over time often indicate hardware degradation.
