@@ -1,10 +1,8 @@
 # Wi-Fi Disconnections on IoT and Smart TV Devices
 
-## Problem Description
-Multiple devices located in the living room (baby monitor and smart TV) experienced frequent Wi-Fi disconnections.  
-Devices required manual reconnection and occasionally failed to reconnect entirely.
-
-## Initial Observations
+## Problem Description and Observations
+- Multiple devices located in the living room (baby monitor and smart TV) experienced frequent Wi-Fi disconnections.  
+- Devices required manual reconnection and occasionally failed to reconnect entirely.
 - Router located in same room
 - 2.4 GHz and 5 GHz bands enabled on a single SSID
 - Other devices in different rooms remained stable
