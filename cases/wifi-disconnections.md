@@ -17,11 +17,17 @@ Devices required manual reconnection and occasionally failed to reconnect entire
 - Client device compatibility limitations
 
 ## Troubleshooting Steps
-1. Tested affected devices on alternate network locations
-2. Created a dedicated 2.4 GHz-only SSID
-3. Manually assigned Wi-Fi channels (1, 6, 11)
-4. Segmented devices across SSIDs (IoT vs primary devices)
-5. Monitored reconnection behavior over time
+
+1. Identified that the issue was isolated to specific IoT-class devices while other endpoints remained stable.
+2. Established probable causes including band steering instability and 2.4 GHz channel congestion.
+3. Tested hypotheses through controlled isolation:
+   - Tested affected devices in alternate physical locations.
+   - Created a dedicated 2.4 GHz-only SSID to remove band steering variables.
+   - Manually assigned non-overlapping Wi-Fi channels (1, 6, 11).
+4. Implemented corrective configuration:
+   - Permanently separated 2.4 GHz and 5 GHz into distinct SSIDs.
+   - Segmented IoT devices onto a dedicated SSID.
+5. Verified functionality by monitoring reconnection behavior over time and confirming reduced disconnections.
 
 ## Resolution
 Separating 2.4 GHz and 5 GHz SSIDs and assigning non-overlapping channels significantly reduced disconnections and improved reconnection reliability.
@@ -30,3 +36,4 @@ Separating 2.4 GHz and 5 GHz SSIDs and assigning non-overlapping channels signif
 - IoT devices often struggle with band steering
 - Channel planning matters even in small environments
 - Structured isolation prevents unnecessary hardware replacement
+
