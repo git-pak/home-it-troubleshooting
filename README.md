@@ -4,15 +4,6 @@ The goal is to demonstrate structured problem-solving, diagnostic methodology, a
 
 ---
 
-## Environment
-- Windows 10 / Windows 11
-- Consumer-grade wireless router
-- Wi-Fi 2.4 GHz & 5 GHz networks
-- Mixed client devices (PCs, smart TV, IoT devices)
-- Home network with multiple SSIDs
-
----
-
 ## Troubleshooting Methodology
 Each case study follows a structured troubleshooting framework aligned with industry best practices:
 1. Identify and define the problem
@@ -29,3 +20,8 @@ Each case study follows a structured troubleshooting framework aligned with indu
 
 1. [Wi-Fi Disconnections on IoT Devices](cases/wifi-disconnections.md)
 2. [Intermittent Wireless Adapter Failure – Windows](cases/wifi-adapter-failure.md)
+
+---
+
+## Roadmap / Planned Case Studies
+- Active Directory + DNS + GPO Network Hardening
