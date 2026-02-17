@@ -1,12 +1,12 @@
 # Intermittent Wireless Adapter Failure – Windows (Hardware Replacement)
 
-## Problem Description
-A Windows 10 laptop began experiencing intermittent Wi-Fi disconnections.  
-Over time, the issue worsened until the wireless adapter failed completely.
-
-Each time connectivity was lost, the Wi-Fi icon in the Windows taskbar disappeared entirely, as if wireless capability did not exist on the system.
-
-Ethernet connectivity consistently restored internet access, indicating the issue was isolated to the wireless subsystem.
+## Problem Description and Observations
+- A Windows 10 laptop began experiencing intermittent Wi-Fi disconnections.  
+- Wi-Fi icon disappeared during failure events
+- Wireless adapter intermittently missing in Device Manager
+- Other devices on the network remained stable
+- Issue progressed from intermittent drops to complete failure
+- Ethernet connection remained stable
 
 ## Environment
 - Windows 10 (64-bit)
@@ -14,12 +14,6 @@ Ethernet connectivity consistently restored internet access, indicating the issu
 - DHCP-based home network
 - Dual-band router (2.4 GHz / 5 GHz)
 
-## Initial Observations
-- Wi-Fi icon disappeared during failure events
-- Wireless adapter intermittently missing in Device Manager
-- Other devices on the network remained stable
-- Issue progressed from intermittent drops to complete failure
-- Ethernet connection remained stable
 
 ## Hypotheses
 - Wireless adapter disabled or misconfigured
