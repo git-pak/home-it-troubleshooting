@@ -15,13 +15,14 @@ The goal is to demonstrate structured problem-solving, diagnostic methodology, a
 ---
 
 ## Troubleshooting Methodology
-Each case study follows a consistent troubleshooting framework:
-1. Identify the problem and symptoms
-2. Isolate variables (device, network, environment)
-3. Test hypotheses
-4. Apply corrective action
-5. Verify resolution
-6. Document lessons learned
+Each case study follows a structured troubleshooting framework aligned with industry best practices:
+1. Identify and define the problem
+2. Establish a theory of probable cause
+3. Test the theory through controlled isolation
+4. Implement corrective action
+5. Verify full functionality and system stability
+6. Document findings, root cause, and preventive considerations
+
 
 ---
 
