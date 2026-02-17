@@ -23,9 +23,9 @@ Each case study follows a structured troubleshooting framework aligned with indu
 5. Verify full functionality and system stability
 6. Document findings, root cause, and preventive considerations
 
-
 ---
 
 ## Case Studies
+- [Re-Usable Template](templates/troubleshooting.md)
 - [Wi-Fi Disconnections on IoT Devices](cases/wifi-disconnections.md)
 - [Intermittent Wireless Adapter Failure – Windows](cases/wifi-adapter-failure.md)
