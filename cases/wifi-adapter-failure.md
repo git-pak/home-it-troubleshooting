@@ -1,4 +1,6 @@
 # Intermittent Wireless Adapter Failure – Windows (Hardware Replacement)
+## Summary
+Resolved Windows 10 Wi-Fi failures using Device Manager, ipconfig, and WLAN AutoConfig to isolate OS, driver, and service layers, identify M.2 wireless adapter hardware failure, and restore connectivity through hardware replacement.
 
 ## Problem Description and Observations
 - A Windows 10 laptop began experiencing intermittent Wi-Fi disconnections.  
