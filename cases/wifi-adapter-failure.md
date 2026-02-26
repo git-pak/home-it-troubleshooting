@@ -9,7 +9,7 @@ Resolved Windows 10 Wi-Fi failures using Device Manager, ipconfig, and WLAN Auto
 - Other devices on the network remained stable
 - Issue progressed from intermittent drops to complete failure
 - Ethernet connection remained stable
-Environment
+### Environment
 - Windows 10 (64-bit)
 - Internal M.2 wireless network adapter
 - DHCP-based home network
