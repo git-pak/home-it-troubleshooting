@@ -1,5 +1,8 @@
 # Wi-Fi Disconnections on IoT and Smart TV Devices
 
+## Summary
+Resolved recurring wireless disconnections that affected IoT devices and smart TVs by analyzing RF congestion, separating 2.4 GHz / 5 GHz SSIDs, configuring WPA2/3 compatibility, and optimizing channel selection (1/6/11).
+
 ## Problem Description and Observations
 - Multiple devices located in the living room (baby monitor and smart TV) experienced frequent Wi-Fi disconnections.  
 - Devices required manual reconnection and occasionally failed to reconnect entirely.
