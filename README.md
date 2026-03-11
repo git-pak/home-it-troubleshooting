@@ -20,5 +20,6 @@ Each case study follows a structured troubleshooting framework aligned with indu
 
 1. [Wi-Fi Disconnections on IoT Devices](cases/wifi-disconnections.md)
 2. [Intermittent Wireless Adapter Failure – Windows](cases/wifi-adapter-failure.md)
+3. [Hyper-V Virtual Machine Network Connectivity Failure](cases/Hyper-V-VM-Network-Connectivity-Failure.md)
 
 *(More case studies will be added over time)*
